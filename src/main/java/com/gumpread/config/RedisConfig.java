@@ -9,9 +9,16 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
+/**
+ * redisTemplate配置
+ */
 @Configuration
 public class RedisConfig {
 
+    /**
+     * 配置对象序列化方式，redis的序列化方式为fastJson；
+     * @return
+     */
     @Bean(name = "fastJsonSerializer")
     public FastJsonSerializer getFastJsonSerializer(){
         FastJsonSerializer serializer = new FastJsonSerializer(Object.class);
@@ -22,6 +29,9 @@ public class RedisConfig {
         return serializer;
     }
 
+    /**
+     * redisTemplate配置
+     */
     @Bean(name = "redisTemplate")
     public RedisTemplate<Object, Object> changeTemplateSerilization(RedisConnectionFactory redisConnectionFactory){
         RedisTemplate<Object, Object> redisTemplate = new RedisTemplate<>();

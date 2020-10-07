@@ -4,6 +4,9 @@ import lombok.Data;
 
 import java.util.List;
 
+/**
+ * 封装翻译所得到的结果；
+ */
 @Data
 public class TranslateResult {
     private String from;

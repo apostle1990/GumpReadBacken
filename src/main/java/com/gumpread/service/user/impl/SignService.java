@@ -19,6 +19,9 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
+/**
+ * 登陆的业务层操作；
+ */
 @Service
 public class SignService implements ISignService {
 

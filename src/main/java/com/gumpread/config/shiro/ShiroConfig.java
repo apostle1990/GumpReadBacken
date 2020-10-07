@@ -14,6 +14,9 @@ import org.springframework.context.annotation.Configuration;
 import javax.servlet.Filter;
 import java.util.LinkedHashMap;
 
+/**
+ * 权限管理框架shiro的配置
+ */
 @Configuration
 public class ShiroConfig {
 
@@ -41,6 +44,13 @@ public class ShiroConfig {
         return securityManager;
     }
 
+    /**
+     * 配置请求的权限：
+     *      anon: 匿名
+     *      authc: 需要登陆
+     *      unauthorized : 用户无权限自动跳转；
+     *      unSignIn: 未登录跳转；
+     */
     @Bean
     public ShiroFilterFactoryBean shiroFilterFactorBean(SecurityManager securityManager){
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
@@ -59,6 +69,9 @@ public class ShiroConfig {
     }
 
 
+    /**
+     * 讲session存储到redis里面，而不是本地；
+     */
     @Bean
     public SessionManager sessionManager(){
         MySessionManager mySessionManager = new MySessionManager();

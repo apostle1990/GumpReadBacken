@@ -3,6 +3,9 @@ package com.gumpread.exception;
 import com.fasterxml.jackson.databind.ser.Serializers;
 import lombok.Getter;
 
+/**
+ * 基础异常
+ */
 @Getter
 public class BaseException extends RuntimeException {
 //    异常所属模块

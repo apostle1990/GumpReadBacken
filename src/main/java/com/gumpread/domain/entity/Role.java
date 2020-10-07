@@ -5,7 +5,9 @@ import org.springframework.data.redis.connection.ReactiveSetCommands;
 
 import java.io.Serializable;
 
-
+/**
+ * role角色表对应的实体;
+ */
 public class Role implements Serializable {
     private int id;
     private String role;

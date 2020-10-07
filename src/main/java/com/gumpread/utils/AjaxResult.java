@@ -4,6 +4,9 @@ import com.gumpread.constants.HttpStatus;
 
 import java.util.HashMap;
 
+/**
+ * 对所有请求的处理，需要将所有响应数据，封装到此对象里面，进行返回；
+ */
 public class AjaxResult extends HashMap<String, Object> {
     private static final String  CODE_TAG = "code";
     private static final String  MSG_TAG = "msg";

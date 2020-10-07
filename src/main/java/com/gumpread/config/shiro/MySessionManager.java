@@ -12,6 +12,9 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import java.io.Serializable;
 
+/**
+ * 这里是，类似于一个拦截器，取出每个请求里面的sessionId；
+ */
 public class MySessionManager extends DefaultWebSessionManager {
     private static final Logger log = LoggerFactory.getLogger(MySessionManager.class);
 

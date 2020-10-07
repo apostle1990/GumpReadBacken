@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
+/**
+ * 接收翻译相关的请求；
+ */
 @RestController
 @RequestMapping("/translate")
 public class TranslateController {

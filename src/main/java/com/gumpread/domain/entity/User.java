@@ -5,6 +5,9 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * user用户表对应的实体；
+ */
 public class User implements Serializable {
     private int id;
     private String userName;

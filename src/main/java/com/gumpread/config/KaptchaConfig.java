@@ -9,6 +9,9 @@ import java.util.Properties;
 
 import static com.google.code.kaptcha.Constants.*;
 
+/**
+ * 配置验证码生成规则
+ */
 @Configuration
 public class KaptchaConfig {
 

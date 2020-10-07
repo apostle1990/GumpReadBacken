@@ -1,7 +1,9 @@
 package com.gumpread.domain;
 
 
-
+/**
+ * 封装用户登陆时提交的登录信息
+ */
 public class SignInBody {
     private String userName;
     private String password;

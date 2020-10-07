@@ -12,7 +12,7 @@ import org.springframework.util.Assert;
 import java.nio.charset.Charset;
 
 /**
- * Redis使用FastJson序列化
+ * Redis使用FastJson序列化，fastJson的配置
  *
  * @author ruoyi
  */

@@ -19,6 +19,9 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 接收验证码相关请求；
+ */
 @Controller
 public class CaptchaController {
     private static final Logger log = LoggerFactory.getLogger(CaptchaController.class);

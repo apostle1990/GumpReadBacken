@@ -4,6 +4,9 @@ package com.gumpread.config;
 import com.gumpread.utils.tranlsate.TransApi;
 import org.springframework.stereotype.Component;
 
+/**
+ * 百度翻译接口密钥配置
+ */
 @Component(value = "translate")
 public class Translate {
     private static final String appId = "20200824000550702";
