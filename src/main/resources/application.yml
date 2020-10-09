@@ -5,9 +5,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/gumpread?serverTimezone=UTC
-    username: root
-    password: noah
+    url: jdbc:mysql://120.26.179.169:3306/gumpread?serverTimezone=UTC
+    username: user
+    password: fisheep
     driver-class-name: com.mysql.cj.jdbc.Driver
   redis:
     host: 120.26.179.169
